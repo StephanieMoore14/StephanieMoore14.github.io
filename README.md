@@ -1,7 +1,7 @@
 ## Welcome to GitHub Pages
 
 You can host more than one web page on this by calling:
-# push to the remote gh-pages branch with force
+
 git push --force origin master:gh-pages
 
 This makes the url:
