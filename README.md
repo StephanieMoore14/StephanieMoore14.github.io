@@ -1,5 +1,12 @@
 ## Welcome to GitHub Pages
 
+You can host more than one web page on this by calling:
+# push to the remote gh-pages branch with force
+git push --force origin master:gh-pages
+
+This makes the url:
+https://stephaniemoore14.github.io/{repo_name}
+
 You can use the [editor on GitHub](https://github.com/StephanieMoore14/StephanieMoore14.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
