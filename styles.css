@@ -1,16 +1,17 @@
-/* Color Palette - Earthy Blues and Greens */
+/* Color Palette - Earthy Greens and Tans */
 :root {
-    --primary-blue: #3d6b7d;
-    --secondary-blue: #5a8a9f;
-    --light-blue: #8fb9c9;
     --primary-green: #444d3c;
-    --secondary-green: #7a9a7d;
+    --secondary-green: #5a6b4f;
+    --tertiary-green: #7a9a7d;
     --light-green: #a8c5a9;
     --sage: #9faa9e;
+    --warm-tan: #c9b69a;
+    --light-tan: #e8dcc8;
     --earth-brown: #6b5d52;
     --cream: #f5f3ef;
     --off-white: #fafaf8;
-    --charcoal: #2f3237;
+    --warm-grey: #8a8a82;
+    --charcoal: #3a3a38;
     --text-dark: #3a3a3a;
     --text-light: #666666;
 }
@@ -41,7 +42,7 @@ body {
 
 /* Navigation */
 .nav {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-green);
     position: fixed;
     width: 100%;
     top: 0;
@@ -68,7 +69,7 @@ body {
 }
 
 .nav-logo:hover {
-    color: var(--light-green);
+    color: var(--light-tan);
 }
 
 .nav-menu {
@@ -86,7 +87,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: var(--light-green);
+    color: var(--light-tan);
 }
 
 /* Hero Section */
@@ -107,14 +108,14 @@ body {
 
 .hero-text h1 {
     font-size: 3.5rem;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     margin-bottom: 0.5rem;
     line-height: 1.2;
 }
 
 .hero-text h2 {
     font-size: 1.5rem;
-    color: var(--primary-green);
+    color: var(--secondary-green);
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
@@ -142,24 +143,24 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-green);
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-blue);
+    background-color: var(--secondary-green);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(61, 107, 125, 0.3);
+    box-shadow: 0 4px 12px rgba(68, 77, 60, 0.3);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--primary-green);
-    border: 2px solid var(--primary-green);
+    color: var(--secondary-green);
+    border: 2px solid var(--secondary-green);
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-green);
+    background-color: var(--secondary-green);
     color: white;
     transform: translateY(-2px);
 }
@@ -184,7 +185,7 @@ section {
 
 .section-title {
     font-size: 2.5rem;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     margin-bottom: 3rem;
     text-align: center;
     position: relative;
@@ -195,7 +196,7 @@ section {
     display: block;
     width: 80px;
     height: 4px;
-    background: linear-gradient(to right, var(--primary-blue), var(--primary-green));
+    background: linear-gradient(to right, var(--primary-green), var(--warm-tan));
     margin: 1rem auto 0;
     border-radius: 2px;
 }
@@ -223,7 +224,7 @@ section {
 
 .skills h3 {
     font-size: 1.8rem;
-    color: var(--primary-green);
+    color: var(--secondary-green);
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -238,7 +239,7 @@ section {
     background-color: var(--cream);
     padding: 2rem;
     border-radius: 8px;
-    border-left: 4px solid var(--primary-blue);
+    border-left: 4px solid var(--primary-green);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -248,7 +249,7 @@ section {
 }
 
 .skill-item h4 {
-    color: var(--primary-blue);
+    color: var(--primary-green);
     font-size: 1.3rem;
     margin-bottom: 0.75rem;
 }
@@ -287,7 +288,7 @@ section {
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    border-top: 4px solid var(--secondary-green);
+    border-top: 4px solid var(--tertiary-green);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -297,7 +298,7 @@ section {
 }
 
 .expertise-card h3 {
-    color: var(--primary-blue);
+    color: var(--primary-green);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
@@ -334,21 +335,21 @@ section {
     background-color: var(--cream);
     padding: 2rem;
     border-radius: 10px;
-    border-left: 4px solid var(--primary-green);
+    border-left: 4px solid var(--secondary-green);
     transition: all 0.3s ease;
     position: relative;
 }
 
 .article-card.featured {
-    background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
-    border-left: 4px solid var(--primary-blue);
+    background: linear-gradient(135deg, var(--light-tan) 0%, var(--light-green) 100%);
+    border-left: 4px solid var(--primary-green);
 }
 
 .featured-badge {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: var(--primary-blue);
+    background-color: var(--primary-green);
     color: white;
     padding: 0.4rem 1rem;
     border-radius: 20px;
@@ -362,7 +363,7 @@ section {
 }
 
 .article-card h3 {
-    color: var(--primary-blue);
+    color: var(--primary-green);
     font-size: 1.3rem;
     margin-bottom: 0.75rem;
     line-height: 1.4;
@@ -373,7 +374,7 @@ section {
 }
 
 .article-meta {
-    color: var(--secondary-blue);
+    color: var(--secondary-green);
     font-size: 0.9rem;
     margin-bottom: 1rem;
     font-weight: 500;
@@ -390,7 +391,7 @@ section {
 }
 
 .article-link {
-    color: var(--primary-blue);
+    color: var(--primary-green);
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
@@ -398,7 +399,7 @@ section {
 }
 
 .article-link:hover {
-    color: var(--secondary-blue);
+    color: var(--secondary-green);
     transform: translateX(5px);
 }
 
@@ -434,11 +435,11 @@ section {
     padding: 3rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border-top: 5px solid var(--primary-blue);
+    border-top: 5px solid var(--primary-green);
 }
 
 .research-card h3 {
-    color: var(--primary-blue);
+    color: var(--primary-green);
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
 }
@@ -457,7 +458,7 @@ section {
 }
 
 .research-highlights h4 {
-    color: var(--primary-green);
+    color: var(--secondary-green);
     font-size: 1.1rem;
     margin-bottom: 1rem;
 }
@@ -497,7 +498,7 @@ section {
 }
 
 .contact-card {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
     padding: 2.5rem;
     border-radius: 12px;
     text-align: center;
@@ -511,7 +512,7 @@ section {
 }
 
 .contact-card h3 {
-    color: var(--light-green);
+    color: var(--light-tan);
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
@@ -525,7 +526,7 @@ section {
 }
 
 .contact-card a:hover {
-    color: var(--light-green);
+    color: var(--light-tan);
 }
 
 /* Footer */
@@ -556,7 +557,7 @@ section {
 }
 
 .footer-links a:hover {
-    color: var(--light-green);
+    color: var(--light-tan);
 }
 
 /* Responsive Design */
