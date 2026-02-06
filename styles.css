@@ -325,6 +325,42 @@ section {
     line-height: 1.7;
 }
 
+.recognition-section,
+.speaking-section,
+.articles-section {
+    margin-bottom: 4rem;
+}
+
+.subsection-title {
+    font-size: 1.6rem;
+    color: var(--secondary-green);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--cream);
+}
+
+.recognition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.recognition-card {
+    border-left: 4px solid var(--warm-tan);
+}
+
+.award-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--warm-tan);
+    color: var(--charcoal);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
