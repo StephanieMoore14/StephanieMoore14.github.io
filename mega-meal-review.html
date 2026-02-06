@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega-Meal Competitive Review - Stephanie Moore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .research-detail {
+            max-width: 1000px;
+            margin: 120px auto 80px;
+            padding: 0 2rem;
+        }
+
+        .research-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--cream);
+        }
+
+        .research-title {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .research-subtitle {
+            font-size: 1.2rem;
+            color: var(--primary-green);
+            line-height: 1.6;
+        }
+
+        .executive-summary {
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .executive-summary h2 {
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .executive-summary p, .executive-summary li {
+            color: var(--charcoal);
+        }
+
+        .app-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary-blue);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .app-section h3 {
+            color: var(--primary-blue);
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .app-section h4 {
+            color: var(--primary-green);
+            font-size: 1.2rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .app-section p, .app-section li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .app-section ul {
+            margin-left: 1.5rem;
+        }
+
+        .key-findings {
+            background-color: var(--cream);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .key-findings h4 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .key-findings ul {
+            margin-left: 1.5rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .comparison-table th {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--cream);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:hover {
+            background-color: var(--cream);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--secondary-blue);
+        }
+
+        .category-header {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 3rem 0 2rem;
+        }
+
+        .category-header h2 {
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Stephanie Moore</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#writing">Writing</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="research-detail">
+        <a href="index.html#research" class="back-link">← Back to Research</a>
+        
+        <header class="research-header">
+            <h1 class="research-title">Mega-Meal Competitive Review</h1>
+            <p class="research-subtitle">How leading CGM and nutrition apps handle complex meal scenarios, including overlapping meals and extended eating periods</p>
+        </header>
+
+        <div class="executive-summary">
+            <h2>Executive Summary</h2>
+            <p>This comprehensive analysis examines how various health and nutrition platforms—both CGM-based and nutrition-only apps—approach the challenge of scoring and tracking "mega-meals" or overlapping eating events. The review covers algorithmic approaches, user-facing messaging, and key differentiators across the competitive landscape.</p>
+            
+            <div class="key-findings">
+                <h4>Key Takeaways</h4>
+                <ul>
+                    <li>CGM-based platforms (Levels, Veri, Nutrisense, Signos, Nutrino, UnderMyFork) heavily incorporate real-time glucose response metrics (e.g., AUC, peaks, slopes), often alongside meal timing and sequencing considerations</li>
+                    <li>Only a subset of apps explicitly account for overlapping or extended meal periods: Levels (2-hour window reset), Nutrisense (2-hour post-meal window), and UnderMyFork (per-meal TIR calculation)</li>
+                    <li>Nutrition-only apps (Lifesum, Fooducate, Kroger, Weight Watchers, Fitbit Pro) focus on macronutrient balance, processing levels, and nutrient density, but do not account for postprandial glucose effects or meal timing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="comparison-table-container">
+            <h2 style="color: var(--primary-blue); margin: 2rem 0 1.5rem;">Quick Comparison: Mega-Meal Handling</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Handles Overlapping Meals?</th>
+                        <th>Approach</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Levels</strong></td>
+                        <td>Yes</td>
+                        <td>Clock resets every 2 hours; mega-meal scores reflect combined effect</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nutrisense</strong></td>
+                        <td>Partial</td>
+                        <td>Uses 2-hour post-meal window even if overlapping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UnderMyFork</strong></td>
+                        <td>Yes</td>
+                        <td>Calculates postprandial TIR for each meal photo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Veri</strong></td>
+                        <td>No</td>
+                        <td>One score per photo entry</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Signos</strong></td>
+                        <td>No</td>
+                        <td>Macros and predicted glycemic impact only</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category-header">
+            <h2>CGM-Based Applications</h2>
+        </div>
+
+        <section class="app-section">
+            <h3>Levels Health</h3>
+            
+            <h4>Algorithmic Approach</h4>
+            <p>Levels Health uses a "Glucose Response" system that analyzes all logged food, activities, and notes occurring within proximity of each other. The platform provides a numerical score between 1 to 10, with 10 being optimal (minimal glucose response) and 1 being poor (high glucose response).</p>
+            
+            <p>The score is based on three key metrics:</p>
+            <ul>
+                <li><strong>Glucose Increase:</strong> How high glucose rose</li>
+                <li><strong>Glucose Slope:</strong> How quickly it went up</li>
+                <li><strong>Area Under the Curve:</strong> How long it stayed elevated before returning to baseline</li>
+            </ul>
+            
+            <p>The quality of food (macro/micronutrient content, processing level) is also minimally considered.</p>
+            
+            <p><strong>Critical Feature:</strong> The glucose window extends beyond 2 hours if an additional meal is logged during the period—the "clock restarts" with each log. If logs are consistently under 2 hours apart, users might only have one Meal Score for the day instead of several separate scores.</p>
+            
+            <h4>User-Facing Messaging</h4>
+            <p>When multiple meals are logged close in time, Levels informs users that the Glucose Response score reflects the combined effect of all logged activities. This helps users understand that lifestyle decisions like snacking, napping, and working out impact their metabolic response collectively.</p>
+            
+            <p>To avoid having only one meal score for the day, Levels Support recommends: "logging multiple foods at once rather than creating separate entries. You can also edit your logs after the fact to consolidate logs."</p>
+        </section>
+
+        <section class="app-section">
+            <h3>Veri</h3>
+            
+            <h4>Algorithmic Approach</h4>
+            <p><em>Note: Veri has joined Oura and will be discontinued.</em></p>
+            
+            <p>Veri's Meal Score considered both glucose response and food quality from a picture of the food. The score ranged from 1 to 10 and was based on how processed a food is, its nutritional quality, and its glycemic index.</p>
+            
+            <p>The score integrated:</p>
+            <ul>
+                <li>Glucose fluctuation</li>
+                <li>Glucose rise</li>
+                <li>Time above ideal range</li>
+                <li>After-meal average glucose level</li>
+                <li>Food Quality (categorized by processing level, nutritional quality, and glycemic index)</li>
+            </ul>
+            
+            <h4>User-Facing Messaging</h4>
+            <p>One score was provided per photo entry, so there was no mention of dealing with "overlapping" meals. Each meal photo resulted in a discrete, independent score.</p>
+        </section>
+
+        <section class="app-section">
+            <h3>Nutrisense</h3>
+            
+            <h4>Algorithmic Approach</h4>
+            <p>Nutrisense emphasizes meal sequencing, where consuming protein and/or fat before carbohydrates can improve postprandial glucose responses. This approach helps manage glucose swings and maintain stable values by reducing insulin secretion and promoting satiety.</p>
+            
+            <p>Key components the algorithm evaluates:</p>
+            <ul>
+                <li><strong>Peak:</strong> Highest glucose value within 2 hours after eating</li>
+                <li><strong>Exposure:</strong> Area under the curve within 2 hours after eating (measures strength of glucose response)</li>
+                <li><strong>Stability:</strong> Lowest vs. highest glucose value within 2 hours of eating</li>
+                <li><strong>Recovery:</strong> How close your 2-hour glucose value was to your pre-meal glucose value</li>
+            </ul>
+            
+            <h4>User-Facing Messaging</h4>
+            <p>There is no explicit mention of handling meals that are close together algorithmically. However, Nutrisense features a comparison tool for different meals. Personalized guidance for differences between meals is only available through working with a nutritionist.</p>
+        </section>
+
+        <section class="app-section">
+            <h3>Signos</h3>
+            
+            <h4>Algorithmic Approach</h4>
+            <p>Signos offers various methods for logging meals, including text, photos, and barcode scanning, to help users understand how different foods affect their glucose levels. The platform does not provide a meal score per se, but rather macronutrient data and predicted glycemic impact.</p>
+            
+            <h4>User-Facing Messaging</h4>
+            <p>Signos encourages users to log meals consistently to receive personalized glucose predictions. If multiple meals are logged close in time, the app provides feedback on the combined impact and suggests ingredient swaps to lower the glucose impact.</p>
+        </section>
+
+        <section class="app-section">
+            <h3>UnderMyFork</h3>
+            
+            <h4>Algorithmic Approach</h4>
+            <p>UnderMyFork combines glucose data from CGMs with meal photos to calculate postprandial Time in Range (TIR) for each meal. The app encourages users to upload photos of meals before eating so the system can analyze the meal alongside users' synced diabetes data to calculate post-meal glucose levels.</p>
+            
+            <h4>User-Facing Messaging</h4>
+            <p>UnderMyFork encourages users to add tags to meals (like "snack" or "lunch") to compare meals across different scenarios. The photo-based approach with TIR calculation provides a discrete metric for each eating event.</p>
+        </section>
+
+        <div class="category-header">
+            <h2>Nutrition-Only Applications</h2>
+        </div>
+
+        <section class="app-section">
+            <h3>Lifesum</h3>
+            
+            <h4>Algorithmic Approach</h4>
+            <p>Lifesum allows users to log meals via photo, voice, text, or barcode. Food ratings are based on each food's distribution of macro- and micronutrients, calorie density, and food type.</p>
+            
+            <p>For a meal to be rated, it must be listed as the right type of food and have all macro- and micronutrient information specified. The system evaluates:</p>
+            <ul>
+                <li>Nutrition distributions</li>
+                <li>Total calories</li>
+                <li>Level of added sugar</li>
+            </ul>
+            
+            <p>Each meal receives a color and emoji rating. Ratings are based on the nutritional value of 100 calories of the food.</p>
+            
+            <p>Mega-meals or meals close in time appear to be accounted for in the system constraints used to rate logged foods.</p>
+        </section>
+
+        <section class="app-section">
+            <h3>Fooducate</h3>
+            
+            <h4>Algorithmic Approach</h4>
+            <p>Fooducate's Meal Analysis feature visualizes essential nutrition metrics for each meal, including total calories, food grades, and macronutrient breakdown.</p>
+            
+            <p>Key features include:</p>
+            <ul>
+                <li><strong>Total Calories:</strong> Includes calories from all entries of the same meal type (if multiple entries exist)</li>
+                <li><strong>Food Grades:</strong> Average Food Grade calculated by consolidating information between multiple entries of the same meal type (color + letter grade)</li>
+            </ul>
+            
+            <p>Scoring considers: positive vs. negative nutrients, healthy vs. harmful ingredients, product segmentation (e.g., breakfast cereal, yogurt, bread, fruits), and highly processed products vs. real ingredients.</p>
+            
+            <h4>User-Facing Messaging</h4>
+            <p>Fooducate explains that the Meal Analysis feature consolidates information from multiple entries of the same meal type, providing a comprehensive view of nutritional intake.</p>
+        </section>
+
+        <section class="app-section">
+            <h3>Weight Watchers</h3>
+            
+            <h4>Algorithmic Approach</h4>
+            <p>Utilizes a point system based on nutritional quality including saturated fats, sugar, fiber, and protein. The algorithm guides users toward foods higher in healthy fats, fiber, and protein and lower in added sugars and saturated fats.</p>
+            
+            <p>Logging is done by importing recipes from the web or taking a photo.</p>
+            
+            <h4>User-Facing Messaging</h4>
+            <p>Users are given a points budget for the day and week based on factors including age, goal weight, sex, height, weight, and activity level. Meals are assigned point values, but timing and glucose effect are not considered.</p>
+        </section>
+
+        <div class="executive-summary" style="margin-top: 3rem;">
+            <h2>Strategic Implications</h2>
+            <p>This competitive analysis reveals several key opportunities for product differentiation in the meal tracking and glucose monitoring space:</p>
+            <ul>
+                <li><strong>Algorithmic Sophistication:</strong> Most apps still struggle with overlapping meal periods. There's an opportunity to develop more sophisticated time-window logic that better reflects real-world eating patterns.</li>
+                <li><strong>User Education:</strong> Clear communication about how mega-meals are scored could reduce user confusion and improve trust in the scoring system.</li>
+                <li><strong>Hybrid Approaches:</strong> Combining CGM data with nutrition quality metrics (as Veri attempted) shows promise but requires careful UX design to avoid overwhelming users.</li>
+                <li><strong>Personalization:</strong> Meal sequencing insights (Nutrisense) and individual response patterns could be leveraged more extensively across platforms.</li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stephanie Moore. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:sgmoore209@gmail.com">Email</a>
+                <a href="http://linkedin.com/in/stephaniemoore209" target="_blank">LinkedIn</a>
+                <a href="https://github.com/StephanieMoore14" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

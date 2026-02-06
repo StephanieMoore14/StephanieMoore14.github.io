@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrating Garmin with Continuous Glucose Monitoring - Stephanie Moore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blog-post {
+            max-width: 800px;
+            margin: 120px auto 80px;
+            padding: 0 2rem;
+        }
+
+        .blog-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--cream);
+        }
+
+        .blog-meta {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-title {
+            font-size: 2.8rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .blog-subtitle {
+            font-size: 1.3rem;
+            color: var(--primary-green);
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .blog-content h2 {
+            color: var(--primary-blue);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .blog-content h3 {
+            color: var(--primary-green);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .blog-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-content ul, .blog-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .blog-content li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .callout {
+            background-color: var(--cream);
+            border-left: 4px solid var(--primary-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--secondary-blue);
+        }
+
+        .author-bio {
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        .author-bio h3 {
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .author-bio p {
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .author-bio a {
+            color: var(--primary-blue);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .author-bio a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Stephanie Moore</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#writing">Writing</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <a href="index.html#writing" class="back-link">← Back to Writing</a>
+        
+        <header class="blog-header">
+            <div class="blog-meta">February 5, 2026 • 8 min read</div>
+            <h1 class="blog-title">Integrating Garmin with Continuous Glucose Monitoring: A Product Perspective</h1>
+            <p class="blog-subtitle">Exploring how fitness tracking and metabolic health monitoring can work together to provide holistic health insights</p>
+        </header>
+
+        <div class="blog-content">
+            <p>As we move deeper into an era of personalized health technology, the convergence of fitness tracking and metabolic monitoring represents one of the most exciting frontiers in consumer wellness. Having spent considerable time analyzing the continuous glucose monitoring (CGM) ecosystem, I've become increasingly interested in how platforms like Garmin could enhance their already robust fitness tracking with metabolic health data.</p>
+
+            <h2>The Current State: Two Parallel Worlds</h2>
+
+            <p>Today's health monitoring landscape is somewhat fragmented. On one side, we have comprehensive fitness trackers like Garmin devices that excel at monitoring physical activity, heart rate, sleep, stress, and training load. On the other, we have CGM platforms like Levels, Nutrisense, and Signos that provide deep insights into how our bodies respond to food and activity through continuous glucose monitoring.</p>
+
+            <p>While both ecosystems deliver valuable data, they largely operate in silos. Users interested in both fitness optimization and metabolic health often find themselves managing multiple apps, manually cross-referencing data, and trying to piece together a holistic picture of their health.</p>
+
+            <div class="callout">
+                <p><strong>The Opportunity:</strong> What if we could seamlessly integrate these data streams to provide users with actionable insights that consider both their activity patterns and metabolic responses?</p>
+            </div>
+
+            <h2>Why This Integration Matters</h2>
+
+            <h3>1. Exercise and Glucose Dynamics</h3>
+
+            <p>Exercise has a profound impact on blood glucose levels, but the relationship is nuanced. Different types of exercise affect glucose differently: aerobic exercise typically lowers blood sugar, while high-intensity interval training can temporarily raise it before bringing it down. For serious athletes and fitness enthusiasts using Garmin devices, understanding these dynamics could revolutionize training strategies.</p>
+
+            <p>Imagine receiving a notification on your Garmin watch: "Your glucose levels suggest optimal conditions for endurance training right now" or "Consider a light snack before your scheduled HIIT workout based on your current glucose trend."</p>
+
+            <h3>2. Recovery and Metabolic Health</h3>
+
+            <p>Garmin already excels at recovery monitoring through metrics like HRV, sleep quality, and body battery. Adding glucose data could enhance these insights significantly. Poor sleep affects glucose regulation, and glucose spikes can impact recovery. By correlating these data points, we could provide users with a more complete picture of their recovery status.</p>
+
+            <h3>3. Nutrition Timing and Athletic Performance</h3>
+
+            <p>Competitive athletes know that nutrition timing matters. CGM data integrated with Garmin's training load and planned workouts could help athletes optimize when and what they eat to fuel their performance. Pre-workout meal suggestions based on upcoming training intensity, glucose-aware fueling strategies during long endurance events, and post-workout nutrition guidance tailored to individual metabolic responses all become possible.</p>
+
+            <h2>Product Design Considerations</h2>
+
+            <h3>User Experience Challenges</h3>
+
+            <p>From a product perspective, several challenges would need to be addressed:</p>
+
+            <ul>
+                <li><strong>Data Overload:</strong> Garmin users already have access to dozens of metrics. Adding glucose data requires thoughtful UX design to surface insights without overwhelming users.</li>
+                <li><strong>Sensor Integration:</strong> Currently, CGM sensors require separate devices. A seamless integration would need partnerships with CGM manufacturers or development of Garmin's own sensing technology.</li>
+                <li><strong>Actionability:</strong> Raw glucose numbers mean little to most users. The real value lies in contextual insights that connect glucose trends to fitness outcomes.</li>
+                <li><strong>Privacy and Health Data:</strong> Glucose data is sensitive health information, requiring robust privacy protections and clear user controls.</li>
+            </ul>
+
+            <h3>Target User Segments</h3>
+
+            <p>Based on my competitive analysis of the CGM market, several user segments would benefit most from this integration:</p>
+
+            <ol>
+                <li><strong>Performance Athletes:</strong> Cyclists, runners, and triathletes seeking every competitive advantage through optimized fueling and recovery</li>
+                <li><strong>Health-Conscious Fitness Enthusiasts:</strong> Users already tracking multiple health metrics who want a more complete picture</li>
+                <li><strong>People with Prediabetes:</strong> Individuals managing glucose levels through lifestyle changes who are also focused on fitness</li>
+                <li><strong>Biohackers and Quantified Self Adherents:</strong> Early adopters interested in experimenting with their health data</li>
+            </ol>
+
+            <h2>Learning from Existing CGM Platforms</h2>
+
+            <p>My research into platforms like Levels, Nutrisense, and Signos reveals several successful approaches that could inform a Garmin integration:</p>
+
+            <h3>Algorithmic Sophistication</h3>
+
+            <p>Leading CGM platforms use sophisticated algorithms that consider not just glucose peaks, but also the area under the curve (AUC), rate of change, and time to baseline. A Garmin integration should leverage similar approaches while adding the unique context of activity data.</p>
+
+            <h3>Meal Logging and Context</h3>
+
+            <p>Most successful CGM apps include meal logging features. However, they often struggle with "mega-meals" or overlapping eating periods. Garmin could potentially improve on this by using activity data to better understand context—did that glucose spike happen during a training session, or was it purely dietary?</p>
+
+            <h3>Personalization</h3>
+
+            <p>Nutrisense's emphasis on meal sequencing (eating protein and fat before carbohydrates) demonstrates the importance of personalized recommendations. Garmin could take this further by considering individual training schedules, recovery needs, and performance goals.</p>
+
+            <div class="callout">
+                <p><strong>Key Insight:</strong> The most valuable integration wouldn't just display glucose data on a Garmin device—it would synthesize glucose trends with activity, sleep, and stress data to provide uniquely actionable insights.</p>
+            </div>
+
+            <h2>The Path Forward</h2>
+
+            <p>While full integration of CGM technology into Garmin devices may still be years away due to regulatory, technical, and business considerations, there are incremental steps that could move us in this direction:</p>
+
+            <ol>
+                <li><strong>API Partnerships:</strong> Garmin could partner with existing CGM platforms to allow data sharing through Connect IQ apps</li>
+                <li><strong>Pilot Programs:</strong> Limited releases with select CGM partners could help validate use cases and refine the experience</li>
+                <li><strong>Research Collaborations:</strong> Working with sports science researchers to understand the relationship between training load and glucose dynamics</li>
+                <li><strong>Educational Content:</strong> Helping users understand the connection between metabolic health and athletic performance</li>
+            </ol>
+
+            <h2>Conclusion</h2>
+
+            <p>The integration of continuous glucose monitoring with Garmin's robust fitness tracking platform represents a significant opportunity to deliver more comprehensive, actionable health insights to users. While challenges remain in terms of technology, user experience, and business model, the potential benefits for athletes, fitness enthusiasts, and health-conscious individuals are substantial.</p>
+
+            <p>As someone who has studied the CGM landscape extensively, I'm excited about the possibilities this integration could unlock. The future of health technology isn't just about collecting more data—it's about making that data meaningful, actionable, and integrated into the daily lives of people pursuing their health and fitness goals.</p>
+
+            <p>What makes this particularly compelling from a product perspective is that we're not talking about creating an entirely new category. Both the fitness tracking market and the CGM market are established and growing. The opportunity lies in bringing them together in ways that create value greater than the sum of their parts.</p>
+
+            <div class="author-bio">
+                <h3>About the Author</h3>
+                <p>Stephanie Moore is a Product Manager specializing in health technology, with expertise in continuous glucose monitoring systems, wearable technology, and health data analytics. She conducts comprehensive competitive analyses of the digital health landscape and writes about the intersection of technology and healthcare.</p>
+                <p><a href="mailto:sgmoore209@gmail.com">Connect with Stephanie</a></p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stephanie Moore. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:sgmoore209@gmail.com">Email</a>
+                <a href="http://linkedin.com/in/stephaniemoore209" target="_blank">LinkedIn</a>
+                <a href="https://github.com/StephanieMoore14" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
