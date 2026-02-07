@@ -1,6 +1,5 @@
 // Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -62,5 +61,37 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const copyBtn = document.getElementById('copy-email');
+    const feedback = document.getElementById('copy-feedback');
+    if (!copyBtn || !feedback) return;
+
+    copyBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = 'sgmoore209@gmail.com';
+
+        function showFeedback(msg) {
+            feedback.textContent = msg;
+            setTimeout(function() { feedback.textContent = ''; }, 2000);
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(function() {
+                showFeedback('Email copied!');
+            }).catch(function() {
+                showFeedback('Copy failed');
+            });
+        } else {
+            // Fallback for older or non-HTTPS contexts
+            const input = document.createElement('input');
+            input.value = email;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            showFeedback('Email copied!');
+        }
     });
 });
