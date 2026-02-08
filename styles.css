@@ -442,75 +442,13 @@ section {
     color: var(--charcoal);
 }
 
-/* Research Section */
-.research {
-    background: linear-gradient(135deg, var(--off-white) 0%, var(--cream) 100%);
-}
-
-.research-intro {
-    max-width: 700px;
-    margin: 0 auto 3rem;
-    text-align: center;
-}
-
-.research-intro p {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    line-height: 1.7;
-}
-
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 2.5rem;
-}
-
-.research-card {
-    background-color: white;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border-top: 5px solid var(--primary-green);
-}
-
-.research-card h3 {
-    color: var(--primary-green);
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
-}
-
-.research-description {
-    color: var(--text-light);
-    line-height: 1.7;
-    margin-bottom: 2rem;
-}
-
-.research-highlights {
-    background-color: var(--cream);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-}
-
-.research-highlights h4 {
-    color: var(--secondary-green);
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.research-highlights ul {
-    list-style-position: inside;
-    color: var(--text-light);
-    line-height: 1.8;
-}
-
-.research-highlights li {
-    margin-bottom: 0.5rem;
-}
 
 /* Contact Section */
 .contact {
     background-color: white;
+}
+.contact {
+    background: linear-gradient(135deg, var(--cream) 0%, var(--off-white) 100%);
 }
 
 .contact-content {

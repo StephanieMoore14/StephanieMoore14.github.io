@@ -1,5 +1,6 @@
 // Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {    anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll(
         '.skill-item, .expertise-card, .article-card, .research-card, .contact-card'
     );
-    
+
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -63,35 +64,43 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+
+// Email links: open mail app on mobile, copy to clipboard on desktop
 document.addEventListener('DOMContentLoaded', function() {
-    const copyBtn = document.getElementById('copy-email');
-    const feedback = document.getElementById('copy-feedback');
-    if (!copyBtn || !feedback) return;
+    const email = 'sgmoore209@gmail.com';
 
-    copyBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const email = 'sgmoore209@gmail.com';
+    function showFeedback(el, msg) {
+        if (!el) return;
+        el.textContent = msg;
+        setTimeout(function() { el.textContent = ''; }, 2000);
+    }
 
-        function showFeedback(msg) {
-            feedback.textContent = msg;
-            setTimeout(function() { feedback.textContent = ''; }, 2000);
-        }
+    document.querySelectorAll('.copy-email-link').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            // Mobile / touch: let the link open the mail app (don't preventDefault)
+            if (window.matchMedia('(hover: none)').matches) {
+                return;
+            }
+            // Desktop: copy to clipboard and show feedback
+            e.preventDefault();
+            var feedbackEl = (this.closest('section') && this.closest('section').querySelector('.copy-feedback'))
+                || (this.closest('footer') && this.closest('footer').querySelector('.copy-feedback'));
 
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(email).then(function() {
-                showFeedback('Email copied!');
-            }).catch(function() {
-                showFeedback('Copy failed');
-            });
-        } else {
-            // Fallback for older or non-HTTPS contexts
-            const input = document.createElement('input');
-            input.value = email;
-            document.body.appendChild(input);
-            input.select();
-            document.execCommand('copy');
-            document.body.removeChild(input);
-            showFeedback('Email copied!');
-        }
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(function() {
+                    showFeedback(feedbackEl, 'Email copied!');
+                }).catch(function() {
+                    showFeedback(feedbackEl, 'Copy failed');
+                });
+            } else {
+                var input = document.createElement('input');
+                input.value = email;
+                document.body.appendChild(input);
+                input.select();
+                document.execCommand('copy');
+                document.body.removeChild(input);
+                showFeedback(feedbackEl, 'Email copied!');
+            }
+        });
     });
 });
