@@ -660,6 +660,11 @@ section {
     .footer .container {
         flex-direction: column;
     }
+    .blog-float-left {
+        float: none;
+        max-width: 100%;
+        margin: 1.5rem 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -678,4 +683,23 @@ section {
     .btn {
         width: 100%;
     }
+}
+.blog-content .blog-float-left {
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+    max-width: 280px;
+}
+
+.blog-float-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.blog-float-left figcaption {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+    line-height: 1.4;
 }
