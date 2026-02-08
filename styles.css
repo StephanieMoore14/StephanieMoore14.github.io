@@ -382,9 +382,8 @@ section {
 }
 
 .featured-badge {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    display: inline-block;
+    margin-bottom: 0.75rem;
     background-color: var(--primary-green);
     color: white;
     padding: 0.4rem 1rem;
