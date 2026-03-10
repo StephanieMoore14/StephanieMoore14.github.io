@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why I Chose a Garmin Watch for My Mom - Stephanie Moore</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <style>
         .blog-post {
             max-width: 800px;
@@ -57,6 +57,12 @@
             margin-bottom: 1.5rem;
         }
 
+        .blog-content::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
         .blog-content ul {
             margin: 1.5rem 0;
             padding-left: 2rem;
@@ -94,19 +100,6 @@
             color: var(--secondary-green);
         }
 
-        .comparison-box {
-            background: linear-gradient(135deg, var(--cream) 0%, var(--off-white) 100%);
-            border-left: 4px solid var(--secondary-green);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .comparison-box h4 {
-            color: var(--secondary-green);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
 
         .requirements-list {
             background-color: var(--light-tan);
@@ -138,24 +131,59 @@
             font-style: italic;
             margin-top: 1rem;
         }
+
+        .blog-content .blog-float-small {
+            max-width: 140px;
+            width: 140px;
+        }
+
+        .blog-content .blog-float-right {
+            float: right;
+            margin: 0 0 1rem 1.5rem;
+            max-width: 280px;
+            width: 280px;
+        }
+
+        .blog-float-right img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .blog-content .blog-float-right.blog-float-small {
+            max-width: 140px;
+            width: 140px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-content .blog-float-small {
+                width: 100%;
+                max-width: 100%;
+            }
+            .blog-content .blog-float-right {
+                float: none;
+                margin: 1.5rem 0;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Stephanie Moore</a>
+            <a href="/index.html" class="nav-logo">Stephanie Moore</a>
             <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#experience">Experience</a></li>
-                <li><a href="index.html#writing">Thought Leadership</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#experience">Experience</a></li>
+                <li><a href="/index.html#writing">Thought Leadership</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <article class="blog-post">
-        <a href="index.html#writing" class="back-link">← Back to Writing</a>
+        <a href="/index.html#writing" class="back-link">← Back to Writing</a>
         
         <header class="blog-header">
             <div class="blog-meta">March 10, 2026 • 6 min read</div>
@@ -175,7 +203,7 @@
             <h2>What She Actually Needed</h2>
 
             <figure class="blog-float-left">
-                <img src="photos/Cycling_USA_National_Team.png" alt="">
+                <img src="/photos/Cycling_USA_National_Team.png" alt="USA Womens Cycling Team 1985">
             </figure>
             <p>Some background on my mom: she's kind of a rockstar. She swam for Stanford in college, transitioned to rowing where she became a national champion and an alternate for the 1980 Olympic team, then found cycling in her late twenties and went on to win a national championship in the 25km time trial. Now in her early sixties, she's still very much an athlete — on the bike almost daily, with Pilates three times a week and strength training twice a week worked in for good measure.</p>
 
@@ -242,8 +270,8 @@
 
             <p>And one thing that's come up more than once: she'll occasionally forget to start a workout and realize mid-ride. Garmin lets you backfill the start time, so she's not losing that data. Small feature, but it's the kind of thing that would have driven her crazy with a less forgiving device.</p>
 
-            <figure class="blog-float-left">
-                <img src="photos/garmin.png" alt="">
+            <figure class="blog-float-right blog-float-small">
+                <img src="/photos/garmin.jpg" alt="Moms Garmin Watchface">
             </figure>
             <p>She's also been playing around with the watch face customization. You can set it up to show the metrics that matter most to you right on the home screen—steps, average heart rate, whatever. For someone who doesn't want to navigate through menus, having everything visible at a glance makes a huge difference.</p>
 
@@ -252,10 +280,15 @@
 
             <p>Picking a fitness tracker for someone else is actually harder than picking one for yourself. When it's for you, you know exactly what you care about, what annoys you, what features you'll actually use. But when you're choosing for someone else—especially someone from a different generation with different priorities—you have to really think about <em>their</em> use case, not yours.</p>
 
+
+            <figure class="blog-float-left">
+                <img src="/photos/New Britain Race.png" alt="1984 New Britian Criterium">
+            </figure>
             <p>If you're trying to help a parent, partner, or friend pick a fitness tracker, here's my advice: really think about how they'll use it. Not how you would use it. Not what the tech reviewers say is "best." How will <em>they</em> actually interact with this thing every day?</p>
 
             <p>For my mom, that meant prioritizing simplicity and reliability over cutting-edge features, a practical design over sleek aesthetics, and a battery that actually lasted more than a day. The Garmin Vívoactive nailed that balance. And watching her use it without frustration, seeing her actually enjoy tracking her rides again and see her fitness improvements... that's the real win.</p>
            
+            
             <p>Sometimes the best tech isn't the most advanced. It's the one that fits how someone actually lives.</p>
 
         </div>
@@ -273,6 +306,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
