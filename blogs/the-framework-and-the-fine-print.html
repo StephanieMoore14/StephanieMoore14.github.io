@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Framework and The Fine Print - Stephanie Moore</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .blog-post {
+            max-width: 800px;
+            margin: 120px auto 80px;
+            padding: 0 2rem;
+        }
+
+        .blog-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--cream);
+        }
+
+        .blog-meta {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-title {
+            font-size: 2.8rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .blog-subtitle {
+            font-size: 1.3rem;
+            color: var(--secondary-green);
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .blog-content h2 {
+            color: var(--primary-green);
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .blog-content h3 {
+            color: var(--secondary-green);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .blog-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-content::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .blog-content ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .blog-content li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+        .device-card {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--off-white) 100%);
+            border-left: 4px solid var(--secondary-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .device-card h3 {
+            margin-top: 0;
+        }
+
+        .callout {
+            background-color: var(--cream);
+            border-left: 4px solid var(--primary-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--secondary-green);
+        }
+
+        .requirements-list {
+            background-color: var(--light-tan);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .requirements-list h4 {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+
+        .feedback-box {
+            background: linear-gradient(135deg, var(--light-tan) 0%, var(--light-green) 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        .feedback-box p {
+            margin-bottom: 0.75rem;
+        }
+
+        .note {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        .blog-content .blog-float-small {
+            max-width: 140px;
+            width: 140px;
+        }
+
+        .blog-content .blog-float-right {
+            float: right;
+            margin: 0 0 1rem 1.5rem;
+            max-width: 280px;
+            width: 280px;
+        }
+
+        .blog-float-right img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .blog-content .blog-float-right.blog-float-small {
+            max-width: 140px;
+            width: 140px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-content .blog-float-small {
+                width: 100%;
+                max-width: 100%;
+            }
+            .blog-content .blog-float-left,
+            .blog-content .blog-float-right {
+                float: none;
+                max-width: 100%;
+                width: 100%;
+                margin: 1.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/index.html" class="nav-logo">Stephanie Moore</a>
+            <ul class="nav-menu">
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#experience">Experience</a></li>
+                <li><a href="/index.html#writing">Thought Leadership</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <a href="/index.html#writing" class="back-link">← Back to Writing</a>
+
+        <header class="blog-header">
+            <div class="blog-meta">April 6, 2026 • 14 min read</div>
+            <h1 class="blog-title">The Framework and The Fine Print</h1>
+            <p class="blog-subtitle">Comments and curiosities on the book <em>ROAR</em></p>
+        </header>
+
+        <div class="blog-content">
+            <p>I picked up <em>ROAR</em> by Dr. Stacy T. Sims around this time last year when I signed up to run a 15k Tough Mudder with a group of friends. If you're not familiar, Tough Mudder events are obstacle course mud runs designed to test physical strength, mental grit, and teamwork (think ice pits, electric shocks, high walls, and a lot of mud). It's less about speed, more about getting through it together.</p>
+
+            <figure class="blog-float-right">
+                <img src="/photos/ROAR/obstacle.jpg" alt="Tough Mudder obstacle course">
+            </figure>
+
+            <p>I had never run a long distance race before, so being the competitive athlete I am, I started digging into how to actually train and fuel for something like this. Most of what I found was generic. Built around a default athlete that, I was starting to realize, wasn't really built with me in mind. That nudged me toward a question I've become genuinely fascinated by: is there a meaningful difference in how women should train compared to men? And if so, why does so little mainstream fitness content acknowledge it?</p>
+
+            <figure class="blog-float-right blog-float-small">
+                <img src="/photos/ROAR/book_cover.JPG" alt="ROAR book cover by Dr. Stacy T. Sims">
+            </figure>
+
+            <p><em>ROAR</em> came highly recommended in basically every corner of the women's performance and health space, and its premise is simple and honestly a little overdue: women are not small men, and training and nutrition science built almost entirely on male subjects has been failing female athletes for decades. Sims spent her career trying to fix that, and <em>ROAR</em> is her attempt to put that science into accessible, actionable form.</p>
+
+            <p>I came to it looking for frameworks I could actually use, not just inspiration. What I found was both... but also something I wasn't quite expecting: a book that's genuinely illuminating about female physiology, while also being a useful reminder of just how variable and complicated that physiology actually is. A year later, I found myself going back to it more, which is why I wanted to write about it now.</p>
+
+            <h2>The Core Argument (and Why It Matters)</h2>
+
+            <p>Sims's central claim is that hormonal fluctuations across the menstrual cycle (primarily estrogen and progesterone) affect nearly everything: how well you build muscle, how efficiently you use carbohydrates versus fat for fuel, how your body regulates temperature, how you recover, and even how your brain processes stress and motivation. Designing training and nutrition plans without accounting for this is, at best, leaving performance on the table. At worst, it's the reason so many women feel like advice that "should" work just... doesn't.</p>
+
+            <p>Honestly, this clicked for me right away. The idea that women burn more fat relative to carbohydrates during the luteal phase, making high-intensity work harder, explains so much about training days that feel inexplicably flat. The point about protein timing being especially critical post-workout, because progesterone accelerates muscle breakdown, is the kind of thing that makes complete sense in retrospect but I'd never seen laid out so clearly.</p>
+
+            <h2>Where It Gets Messy</h2>
+
+            <p>Here's the thing though: <em>ROAR</em> is built around a relatively consistent, natural hormonal cycle as its organizing principle. The follicular phase (days 1 to 14, lower hormones, better for high intensity and strength gains) and the luteal phase (days 15 to 28, higher hormones, better for moderate-intensity work and prioritizing recovery). It's an elegant framework.</p>
+
+            <p>But female physiology is not one thing. Women on hormonal contraception have a fundamentally different hormonal environment. Though it largely suppresses the cyclical peaks and valleys prevalent in natural cycles, it is still worth understanding what is happening in your body at a hormonal level. Sims details the impact of several types of hormonal contraceptives on training and performance, not just natural cycles, which is a genuinely educational perspective. Women in perimenopause are navigating a different set of changes entirely. And even among women with natural cycles, the research itself (as the book's own critical thinking sections acknowledge) shows significant individual variability. What Sims describes as population-level trends don't always map cleanly onto any one person's experience.</p>
+
+            <p>This isn't a criticism of the book. Sims is rigorous about the science, and she's clearly aware of these nuances. The higher level the framework, the easier it is to digest and apply, but the more it risks glossing over the complexity that makes female physiology so interesting and so hard to study.</p>
+
+            <h2>What I Actually Took Away</h2>
+
+            <p>The book is broken into three sections covering female physiology, fitness foundations, and performance nutrition, and it's dense in the best way. Rather than walk through all of it, I want to focus on the parts that actually changed how I think and train. If you want a fuller breakdown of what's covered, I'd recommend picking up the book itself — it's worth it.</p>
+
+            <p>One part I find myself constantly referencing is a section in "Demystifying and Mastering Your Menstrual Cycle" where Sims touches on a "PMS Cocktail" that targets inflammation and can help with performance during the high hormone phase. I've tried the protocol myself to help with those sluggish parts of the month, so I wanted to share it here:</p>
+
+            <div class="device-card">
+                <h4>PMS Cocktail — each night for the 7 days before your period starts:</h4>
+                <ul>
+                    <li>250 milligrams of magnesium</li>
+                    <li>45 milligrams of zinc</li>
+                    <li>1 gram of Omega-3s</li>
+                </ul>
+            </div>
+
+            <p class="note">As always, check with your doctor before starting any new supplement protocol — this is just what's worked for me personally.</p>
+
+            <p>The fueling section paid off most directly going into the Tough Mudder. My biggest concern was staying fueled and hydrated over what ended up being a four-plus hour event — a long time to be moving hard through mud and obstacles with no real nutritional framework. Her "Quick Reference for Endurance Event and Training Nutrition," along with her guidance in the hydration chapter, became the exact protocol I followed before, during, and after the race.</p>
+
+            <figure style="margin: 2rem 0; text-align: center;">
+                <img src="/photos/ROAR/endurance_nutrition_guide.png" alt="Endurance nutrition guide from ROAR" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+            </figure>
+
+            <p>For day-to-day training, the content reinforced something I'd already suspected from my own experience: fasted workouts are genuinely counterproductive for most women. This was especially validating given all the noise in fitness content about fasting and demonizing carbohydrates. Sims is pretty unambiguous that the cortisol spike from training without fuel hits women harder, interfering with the hormonal environment in ways that undermine the very adaptations you're training for. I came away with a much clearer sense of what a useful pre-workout snack actually looks like for me.</p>
+
+            <p>The recovery chapter has an appropriately fitting title: "How to Refuel, Rebuild and Get Stronger in Your Sleep." Sims covers the basics like active recovery, massage, and foam rolling, but the sleep content is where it gets particularly interesting (and personally relevant given how closely I've been tracking my own sleep through Whoop lately). Sims references sleep specialist Dr. Christopher Winter's work on human growth hormone (HGH) production, which peaks between 11pm and 1am, making early sleep especially valuable — and increasingly important as we age since HGH production declines over time. She also notes that cortisol clears much more slowly in sleep-deprived individuals, and warns that chronically elevated cortisol sets the stage for insulin resistance, increased abdominal fat storage, and a higher risk of injury and overtraining.</p>
+
+            <p>One thing that genuinely surprised me: research suggests that compared to men, women show greater fatigue resistance during repeated high-intensity efforts, recovering faster despite experiencing higher cardiovascular strain and perceived exertion. Put simply, women are built for endurance. We are seeing more and more women outright winning ultra running races like the 2021 Ultra-Trail World Tour and 2021 Race Across America (just to name a few). In practical terms, this means women may be better suited than men for training styles that involve repeated hard efforts with short rest — think circuit training, interval work, or the kind of back-to-back rounds you'd find in a jiu-jitsu class.</p>
+
+            <p>The sweat research was equally surprising. Not only do women sweat less than men but we also start sweating later. For men, this higher sweat capacity can be an advantage in hot and dry conditions where quick cooling matters. But in hot and humid environments it becomes counterproductive — the sweat doesn't evaporate, so the cooling effect is lost. Women, who produce sweat more efficiently and lose less of it to the environment, actually have the upper hand in those conditions.</p>
+
+            <div class="callout">
+                <p>These two findings were really cool to read because they flipped the script on a lot of what mainstream fitness content implies — that women are working against their biology rather than with it. Turns out, in more ways than one, we're actually built for it.</p>
+            </div>
+
+
+            <h2>Biohacking Your Female Physiology</h2>
+
+            <p>Which naturally raises a question: if women's physiology is this different, are our tools actually measuring it correctly? That's where the biohacking chapter comes in. Sims advocates for using heart rate monitors, urinalysis strips, and blood testing to build your own data picture rather than relying on generic population norms. She also goes deep on two specific tools I think about a lot: HRV and CGMs.</p>
+
+            <h3>HRV</h3>
+
+            <figure class="blog-float-right">
+                <img src="/photos/ROAR/HRV.PNG" alt="Heart rate variability chart">
+            </figure>
+
+            <p>HRV (heart rate variability) measures the variability in time between your heartbeats, reflecting the balance between your parasympathetic (rest-and-digest) and sympathetic (fight-or-flight) nervous systems. Higher HRV generally signals your body is resilient and well-recovered. Lower HRV means the opposite.</p>
+
+            <p>Simple enough, until you factor in sex hormones. Estrogen tends to increase vagal tone, which is what devices are actually measuring when they calculate HRV. Progesterone does the opposite, overriding estrogen's effect and decreasing vagal tone. So in naturally cycling women, HRV is highest in the follicular phase and drops after ovulation as progesterone rises. This means your recovery metrics in the late luteal phase will almost always read lower than in the follicular phase — not necessarily because you're under-recovered, but because your hormonal environment changed. Your device doesn't know the difference, and may give you a false low-recovery score as a result. What your device tells you and how you feel don't always match up, and for women, there's a physiological reason for that.</p>
+
+            <p>For those on hormonal contraception, the pattern is different but still present. HRV tends to be elevated in the first few days of starting the pill, then decreases across the active pill weeks, hitting its lowest point in the first couple days of the placebo week before climbing back up. Sims notes that the body is most resilient to training stress in the first five days of pill use and gradually needs more recovery between hard sessions as the cycle progresses. For perimenopausal and postmenopausal women, altered hormone ratios shift the nervous system toward more fight-or-flight activity, meaning wearable algorithms that don't account for this will struggle to accurately predict true recovery for that population.</p>
+
+            <p>The takeaway isn't to ignore your HRV score. It's to track trends rather than reacting to any single number, and to read it alongside respiratory rate and sleep quality as a fuller picture.</p>
+
+            <h3>CGMs</h3>
+
+            <p>Her take on CGMs was equally interesting. CGMs were originally designed for people managing diabetes, particularly Type 1, and have been genuinely life-changing for that population. The growing trend of marketing them to non-diabetic users for health optimization and athletic performance is newer territory, and Sims approaches it with a lot of nuance.</p>
+
+            <p>Her view: CGMs can be genuinely useful for understanding how your blood sugar responds to food, sleep, and stress, and for building awareness around your metabolic health day-to-day. Where she pumps the brakes is on using them as a real-time fuel gauge during exercise. There's roughly a 15-minute lag between blood glucose and the interstitial fluid the sensor reads, so the data isn't truly real-time. And athletes without diabetes have far better metabolic control than those with it, meaning the wide fluctuations that make CGM so critical for diabetic management simply don't occur in the same way for most healthy athletes.</p>
+
+            <p>Her co-author's experience testing a CGM for several months captures the nuance well: genuinely useful insights about how diet and lifestyle affect blood sugar day-to-day, but during training sessions the data was often inconsistent with how she actually felt. The technology is promising, and the research is still catching up — particularly around how the cycle phase affects glucose response in female athletes — but is an area worth watching.</p>
+
+            <h2>Why This Matters for Wearables</h2>
+
+            <p>The HRV nuance, the CGM limitations, the hormonal variability across contraception types and life stages — all of it kept pulling me back to the same question I started with when I first strapped on a fitness tracker: is this device actually built for me? Reading <em>ROAR</em> made that question feel a lot more specific and a lot more actionable. Devices like Oura and Whoop have started introducing cycle-aware features, allowing women to log their cycles and in some cases adjusting recovery and readiness scores based on cycle phase.</p>
+
+            <p>But most cycle-aware features in wearables today are still relatively basic, typically calendar-based, requiring you to log your period start date and working retrospectively from there. More sophisticated approaches layer in symptom tracking or basal body temperature, and the most advanced integrate actual hormone testing. The gap between where most consumer devices sit and what the science Sims describes is significant.</p>
+
+            <p>The core challenge is individual variability: building a feature that meaningfully adjusts recommendations based on where someone is in their cycle requires knowing not just what day it is, but how that person's hormones respond, which varies enormously.</p>
+
+            <p>This is one of the most interesting open problems in women's health technology right now, and <em>ROAR</em> is a useful primer on why it's hard.</p>
+
+            <h2>A Year Later</h2>
+            <figure class="blog-float-right">
+                <img src="/photos/ROAR/toughmudder_end.jpg" alt="Finishing the Tough Mudder">
+            </figure>
+
+            <p>I signed up for the Tough Mudder looking for a training plan and ended up down a rabbit hole about female physiology, hormonal variability, and why the tools we use to track our bodies were largely built without us in mind. I finished the race covered in mud, exhausted, and genuinely proud of myself. But a year later, what I keep coming back to isn't the race, it's how much the book changed the questions I ask about my own training, my recovery, and the data I collect every day.</p>
+
+            <p><em>ROAR</em> is worth reading if you train seriously and are curious about the science behind how your body works. Not because it will hand you a perfect, plug-and-play training plan (it won't, and Sims is honest about that), but because understanding the underlying physiology gives you better tools to interpret your own experience and ask better questions.</p>
+
+            <p>The framework is real. Applying it is complicated. That gap between the elegant model and the messy reality of individual bodies is actually where the most interesting work in women's health science and technology is happening right now. <em>ROAR</em> is a good place to start.</p>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Stephanie Moore. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:sgmoore209@gmail.com">Email</a>
+                <a href="http://linkedin.com/in/stephaniemoore209" target="_blank">LinkedIn</a>
+                <a href="https://github.com/StephanieMoore14" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
